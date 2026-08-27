@@ -29,6 +29,48 @@
             <li>Instagram: Gear Garage MotorCarePH</li>
             <li>Viber: Gear Garage MotorCare No.1</li>
         </ul>
+
+        <!-- Contact Form Section -->
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Your details</legend>
+                
+                <!-- Name -->
+                <div style="margin-bottom: 10px;">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email -->
+                <div style="margin-bottom: 10px;">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Subject Dropdown -->
+                <div style="margin-bottom: 10px;">
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject">
+                        <option value="service-booking">Service Booking</option>
+                        <option value="parts-inquiry">Parts Inquiry</option>
+                        <option value="order-status">Order Status</option>
+                        <option value="other">Something Else</option>
+                    </select>
+                </div>
+
+                <!-- Message Textarea -->
+                <div style="margin-bottom: 10px;">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                </div>
+            </fieldset>
+
+            <div style="margin-top: 15px;">
+                <button type="submit">Send message</button>
+            </div>
+        </form>
+
     </section>
 
 </body>
