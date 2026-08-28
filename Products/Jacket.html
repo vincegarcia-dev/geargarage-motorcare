@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REV'IT! Poseidon 3 GTX</title>
     <style>
-       
         body {
             text-align: center;
             font-family: sans-serif;
@@ -37,6 +36,28 @@
             width: 80%;
             margin: 20px auto;
             line-height: 1.6;
+        }
+        /* Added simple form styling to match the page */
+        form {
+            width: 80%;
+            margin: 40px auto;
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -118,6 +139,46 @@
                 </tr>
             </tbody>
         </table>
+
+        <!-- Order Enquiry Form Starts Here -->
+        <h2>Order Enquiry Form</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="order-quantity">Quantity:</label>
+                <input type="number" id="order-quantity" name="quantity" min="1" max="20" required>
+            </div>
+
+            <fieldset>
+                <legend><strong>Delivery Method</strong></legend>
+                <input type="radio" id="delivery-standard" name="delivery" value="standard" required>
+                <label for="delivery-standard">Standard Delivery</label><br>
+                
+                <input type="radio" id="delivery-express" name="delivery" value="express">
+                <label for="delivery-express">Express Delivery</label><br>
+
+                <input type="radio" id="delivery-pickup" name="delivery" value="pickup">
+                <label for="delivery-pickup">In-Store Pickup</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Optional Extras</strong></legend>
+                <input type="checkbox" id="extra-gift" name="extras" value="gift_wrapping">
+                <label for="extra-gift">Gift Wrapping</label><br>
+                
+                <input type="checkbox" id="extra-express" name="extras" value="express_handling">
+                <label for="extra-express">Express Handling</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="contact-email">Contact Email:</label>
+                <input type="email" id="contact-email" name="contact_email" required>
+            </div>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+        <!-- Order Enquiry Form Ends Here -->
+
     </section>
 </body>
 </html>
