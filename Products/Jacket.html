@@ -140,45 +140,51 @@
             </tbody>
         </table>
 
-        <!-- Order Enquiry Form Starts Here -->
-        <h2>Order Enquiry Form</h2>
+        
+         <h2>Order Enquiry Form</h2>
         <form action="#" method="POST">
             
             <div class="form-group">
-                <label for="order-quantity">Quantity:</label>
-                <input type="number" id="order-quantity" name="quantity" min="1" max="20" required>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20" required>
             </div>
 
             <fieldset>
-                <legend><strong>Delivery Method</strong></legend>
-                <input type="radio" id="delivery-standard" name="delivery" value="standard" required>
-                <label for="delivery-standard">Standard Delivery</label><br>
-                
-                <input type="radio" id="delivery-express" name="delivery" value="express">
-                <label for="delivery-express">Express Delivery</label><br>
-
-                <input type="radio" id="delivery-pickup" name="delivery" value="pickup">
-                <label for="delivery-pickup">In-Store Pickup</label>
+                <legend>Delivery Method</legend>
+                <div>
+                    <input type="radio" id="delivery_standard" name="delivery_method" value="standard" required>
+                    <label for="delivery_standard">Standard Shipping</label>
+                </div>
+                <div>
+                    <input type="radio" id="delivery_express" name="delivery_method" value="express">
+                    <label for="delivery_express">Express Shipping</label>
+                </div>
+                <div>
+                    <input type="radio" id="delivery_pickup" name="delivery_method" value="pickup">
+                    <label for="delivery_pickup">In-Store Pickup</label>
+                </div>
             </fieldset>
 
             <fieldset>
-                <legend><strong>Optional Extras</strong></legend>
-                <input type="checkbox" id="extra-gift" name="extras" value="gift_wrapping">
-                <label for="extra-gift">Gift Wrapping</label><br>
-                
-                <input type="checkbox" id="extra-express" name="extras" value="express_handling">
-                <label for="extra-express">Express Handling</label>
+                <legend>Optional Add-On Extras</legend>
+                <div>
+                    <input type="checkbox" id="extra_gift" name="optional_extras" value="gift_wrapping">
+                    <label for="extra_gift">Gift Wrapping</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="extra_handling" name="optional_extras" value="express_handling">
+                    <label for="extra_handling">Priority Handling</label>
+                </div>
             </fieldset>
 
             <div class="form-group">
-                <label for="contact-email">Contact Email:</label>
-                <input type="email" id="contact-email" name="contact_email" required>
+                <label for="contact_email">Contact Email:</label>
+                <input type="email" id="contact_email" name="contact_email" required>
             </div>
 
-            <button type="submit">Submit Enquiry</button>
+            <button type="submit" style="padding: 10px 20px; cursor: pointer;">Submit Enquiry</button>
         </form>
-        <!-- Order Enquiry Form Ends Here -->
 
-    </section>
+    </center>
 </body>
 </html>
