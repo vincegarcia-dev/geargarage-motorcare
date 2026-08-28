@@ -4,36 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGV Pista GP RR</title>
-    <style>
-        /* Shared styling for a clean, uniform look across product pages */
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-            font-family: sans-serif;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        p {
-            width: 80%;
-            margin: 20px auto;
-            line-height: 1.6;
-            font-family: sans-serif; 
-        }
-        
-        img {
-            max-width: 450px; 
-            width: 100%;      
-            height: auto;     
-            margin: 20px 0;   
-        }
-    </style>
+    <link rel="stylesheet" href="../Styles/Helmet.css">
+    
 </head>
 <body>
     <center>
@@ -124,6 +96,52 @@
                 </tr>
             </tbody>
         </table>
+
+        <!-- Order Enquiry Form Added Below -->
+        <form action="#" method="POST">
+            <h3>Order Enquiry</h3>
+            
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+            </div>
+
+            <fieldset>
+                <legend>Delivery Method</legend>
+                <div>
+                    <input type="radio" id="delivery_standard" name="delivery_method" value="standard" required>
+                    <label for="delivery_standard">Standard Shipping</label>
+                </div>
+                <div>
+                    <input type="radio" id="delivery_express" name="delivery_method" value="express">
+                    <label for="delivery_express">Express Shipping</label>
+                </div>
+                <div>
+                    <input type="radio" id="delivery_pickup" name="delivery_method" value="pickup">
+                    <label for="delivery_pickup">In-Store Pickup</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Optional Add-On Extras</legend>
+                <div>
+                    <input type="checkbox" id="extra_gift" name="optional_extras" value="gift_wrapping">
+                    <label for="extra_gift">Gift Wrapping</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="extra_handling" name="optional_extras" value="express_handling">
+                    <label for="extra_handling">Priority Handling</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="contact_email">Contact Email:</label>
+                <input type="email" id="contact_email" name="contact_email" required>
+            </div>
+
+            <button type="submit" style="padding: 10px 20px; cursor: pointer;">Submit Enquiry</button>
+        </form>
+
     </center>
 </body>
 </html>
