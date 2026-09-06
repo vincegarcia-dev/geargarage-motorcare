@@ -3,45 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REV'IT! Cayenne 2</title>
-    <style>
-        /* Shared styling for consistency across product pages */
-        body {
-            text-align: center;
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            display: inline;
-            margin: 0 15px;
-        }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        p {
-            width: 80%;
-            margin: 20px auto;
-            line-height: 1.6;
-        }
-    </style>
+    <title>REV'IT! Cayenne 2 - Gear Garage MotorCare</title>
+    <link rel="stylesheet" href="../Products_styles/Helmet.css">
 </head>
 <body>
-    <h1>Gear Garage MotorCare</h1>
+    <header>
+        <h1>Gear Garage MotorCare</h1>
+        <p>Build your dream ride. Quality gear and custom parts to stand out on the road.</p>
+    </header>
+    
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -49,71 +19,88 @@
             <li><a href="../contact.html">Contact</a></li>
         </ul>
     </nav>
+    
+    <main>
+        <div class="about-grid" style="margin-bottom: 3rem;">
+            <div class="about-image">
+                <img src="../Images/gloves.jpg" alt="Motorcycle Gloves">
+            </div>
+            <div class="about-text">
+                <h2>REV'IT! Cayenne 2</h2>
+                <p style="font-size: 1.5rem; font-weight: bold; color: var(--brand); margin-top: -10px;">₱1,800</p>
+                <p>Durable leather or reinforced mesh, hard knuckle protection, palm sliders, and a secure wrist closure.</p>
+                <p>It balances high abrasion resistance with comfort and lever feel, protecting your hands from impact and weather while keeping your grip strong.</p>
+            </div>
+        </div>
 
-    <section>
-        <h2>REV'IT! Cayenne 2</h2>
+        <div class="contact-grid">
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Product Specifications</h3>
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Materials</strong></td><td>Perforated goat leather and stretch fabric</td></tr>
+                        <tr><td><strong>Protection</strong></td><td>PU injected knuckle and palm slider</td></tr>
+                        <tr><td><strong>Grip</strong></td><td>Enhanced grip patch on palm</td></tr>
+                        <tr><td><strong>Ventilation</strong></td><td>Fully perforated outer shell for summer riding</td></tr>
+                        <tr><td><strong>Closure</strong></td><td>Adjustable hook and loop wrist strap</td></tr>
+                        <tr><td><strong>Touchscreen</strong></td><td>Connect finger tip fabric on index and thumb</td></tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <img src="../Images/gloves.jpg" 
-             alt="REV'IT! Cayenne 2 Adventure Motorcycle Gloves">
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Order Enquiry</h3>
+                <form action="#" method="POST">
+                    <fieldset style="margin-bottom: 0;">
+                        <div>
+                            <label for="quantity">Quantity:</label><br>
+                            <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Delivery Method</label>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_standard" name="delivery_method" value="standard" required>
+                                <label for="delivery_standard">Standard Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_express" name="delivery_method" value="express">
+                                <label for="delivery_express">Express Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_pickup" name="delivery_method" value="pickup">
+                                <label for="delivery_pickup">In-Store Pickup</label>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Optional Extras</label>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_gift" name="optional_extras" value="gift_wrapping">
+                                <label for="extra_gift">Gift Wrapping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_handling" name="optional_extras" value="express_handling">
+                                <label for="extra_handling">Priority Handling</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact_email">Contact Email:</label><br>
+                            <input type="email" id="contact_email" name="contact_email" required>
+                        </div>
+                        <button type="submit">Submit Enquiry</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
 
-        <p>
-            The REV'IT! Cayenne 2 is a premium adventure motorcycle gloves designed for optimal protection and comfort during on- and off-road riding in high temperatures. <br>
-            They come fully equipped with CE-level 2 impact armor at the fingers, knuckles, and palms, alongside integrated adventure features <br>
-            like a detachable kidney belt and a hydration bladder pocket.
-        </p>
-
-        <h3>Product Specifications</h3>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Specification</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Intended Use</strong></td>
-                    <td>Adventure riding (On and Off-road) in high temperatures</td>
-                </tr>
-                <tr>
-                    <td><strong>Outer Shell Material</strong></td>
-                    <td>Schoeller®-dynatec® mesh, Parkskin, PWR|Shell stretch, and PWR|Shell ripstop</td>
-                </tr>
-                <tr>
-                    <td><strong>Ventilation</strong></td>
-                    <td>Fully ventilated mesh panels prominently located at the front, back, and underarms</td>
-                </tr>
-                <tr>
-                    <td><strong>Impact Protection</strong></td>
-                    <td>SEEFLEX™ CE-level 2 Shoulder and Elbow Protectors, SEESOFT™ AIR CE-level 2 Back Protector</td>
-                </tr>
-                <tr>
-                    <td><strong>Upgrade Preparedness</strong></td>
-                    <td>Pockets/loops for SEESOFT™ CE-level 1 Divided Chest Protector, Segur neck brace, and NEON vest connector</td>
-                </tr>
-                <tr>
-                    <td><strong>Adjustability</strong></td>
-                    <td>Flexisnap collar; height-adjustable elbow protection; adjustment straps at the waist, upper arms, and lower arms; UTA tab at cuffs</td>
-                </tr>
-                <tr>
-                    <td><strong>Visibility</strong></td>
-                    <td>Laminated reflection panels welded onto the chest, upper arms, and back</td>
-                </tr>
-                <tr>
-                    <td><strong>Storage / Pockets</strong></td>
-                    <td>Two front stash pockets, two inner pockets, a sleeve pocket, an XL rear storage pocket, and a hydration bladder pocket</td>
-                </tr>
-                <tr>
-                    <td><strong>Special Features</strong></td>
-                    <td>Detachable kidney belt with a secret pocket, stretch panels at the elbows, soft edge collar, and long/short connection zippers</td>
-                </tr>
-                <tr>
-                    <td><strong>Safety Certification</strong></td>
-                    <td>CE certified to the EN 17092 Standard (2020), achieving an <strong>AA</strong> rating</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <footer>
+        <p>&copy; 2026 Gear Garage MotorCare. Ride Safe.</p>
+    </footer>
 </body>
 </html>

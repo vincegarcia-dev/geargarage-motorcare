@@ -3,72 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOTOWOLF MDL0718</title>
+    <title>MOTOWOLF MDL0718 - Gear Garage MotorCare</title>
+    <link rel="stylesheet" href="../Products_styles/Helmet.css">
 </head>
 <body>
-    <center>
+    <header>
         <h1>Gear Garage MotorCare</h1>
-        <nav>
-            <ul style="list-style:none; padding:0;">
-                <li style="display:inline; margin:0 15px;"><a href="../index.html">Home</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="../about.html">About</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </center>
+        <p>Build your dream ride. Quality gear and custom parts to stand out on the road.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="about-grid" style="margin-bottom: 3rem;">
+            <div class="about-image">
+                <img src="../Images/bag.jpg" alt="MOTOWOLF MDL0718 Leg Bag">
+            </div>
+            <div class="about-text">
+                <h2>MOTOWOLF MDL0718</h2>
+                <p style="font-size: 1.5rem; font-weight: bold; color: var(--brand); margin-top: -10px;">₱1,100</p>
+                <p>The MOTOWOLF MDL0718 is a versatile leg bag designed for motorcycle riders who need reliable storage without compromising on style.</p>
+                <p>It features a durable hard shell construction, expandable compartments, and an ergonomic height-adjustable fit.</p>
+            </div>
+        </div>
 
-    <section>
-        <h2 style="text-align: center;">MOTOWOLF MDL0718</h2>
+        <div class="contact-grid">
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Product Specifications</h3>
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Materials</strong></td><td>Built with a protective <strong>PU hard shell</strong> and durable <strong>420D nylon fabric</strong>.</td></tr>
+                        <tr><td><strong>Dimensions</strong></td><td>27 cm (Height) x 17 cm (Width) x 7 cm (Thickness).</td></tr>
+                        <tr><td><strong>Expandability</strong></td><td>Thickness can be expanded by <strong>5 cm</strong> (up to 12 cm total).</td></tr>
+                        <tr><td><strong>Water Resistance</strong></td><td>The outer materials are <strong>waterproof and water-resistant</strong>.</td></tr>
+                        <tr><td><strong>Fit &amp; Comfort</strong></td><td>Ergonomic height-adjustable design with <strong>quick-release buckle</strong>.</td></tr>
+                        <tr><td><strong>Tech Features</strong></td><td>Includes an <strong>integrated earphone port</strong>.</td></tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <img src="../Images/bag.jpg" 
-             alt="MOTOWOLF MDL0718 Leg Bag"
-             style="display: block; margin: 0 auto;">
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Order Enquiry</h3>
+                <form action="#" method="POST">
+                    <fieldset style="margin-bottom: 0;">
+                        <div>
+                            <label for="quantity">Quantity:</label><br>
+                            <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Delivery Method</label>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_standard" name="delivery_method" value="standard" required>
+                                <label for="delivery_standard">Standard Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_express" name="delivery_method" value="express">
+                                <label for="delivery_express">Express Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_pickup" name="delivery_method" value="pickup">
+                                <label for="delivery_pickup">In-Store Pickup</label>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Optional Extras</label>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_gift" name="optional_extras" value="gift_wrapping">
+                                <label for="extra_gift">Gift Wrapping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_handling" name="optional_extras" value="express_handling">
+                                <label for="extra_handling">Priority Handling</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact_email">Contact Email:</label><br>
+                            <input type="email" id="contact_email" name="contact_email" required>
+                        </div>
+                        <button type="submit">Submit Enquiry</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
 
-        <p style="max-width: 800px; margin: 20px auto; text-align: center;">
-            The MOTOWOLF MDL0718 is a versatile leg bag designed for motorcycle riders who need reliable storage without compromising on style.<br><br>
-            It features a durable hard shell construction, expandable compartments, and an ergonomic height-adjustable fit.
-        </p>
-
-        <h3 style="text-align: center;">Product Specifications</h3>
-
-        <table border="1" style="border-collapse: collapse; width: 100%; max-width: 800px; margin: 20px auto;">
-            <colgroup>
-                <col style="width: 30%;">
-                <col style="width: 70%;">
-            </colgroup>
-            <thead>
-                <tr style="background-color: #f2f2f2; text-align: left;">
-                    <th style="padding: 10px;">Specification</th>
-                    <th style="padding: 10px;">Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Materials</td>
-                    <td style="padding: 10px;">Built with a protective <strong>PU hard shell</strong> and durable <strong>420D nylon fabric</strong>.</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Dimensions</td>
-                    <td style="padding: 10px;">27 cm (Height) x 17 cm (Width) x 7 cm (Thickness).</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Expandability</td>
-                    <td style="padding: 10px;">The thickness can be expanded by <strong>5 cm</strong> (up to 12 cm total) to store bulkier items like phones or wallets.</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Water Resistance</td>
-                    <td style="padding: 10px;">The outer materials are <strong>waterproof and water-resistant</strong>, keeping your belongings safe from the elements.</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Fit &amp; Comfort</td>
-                    <td style="padding: 10px;">Features an ergonomic design that is <strong>height-adjustable</strong> and secures with a <strong>quick-release buckle</strong> for easy access.</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Tech Features</td>
-                    <td style="padding: 10px;">Includes an <strong>integrated earphone port</strong>, allowing you to route cables without unzipping the bag.</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <footer>
+        <p>&copy; 2026 Gear Garage MotorCare. Ride Safe.</p>
+    </footer>
 </body>
 </html>

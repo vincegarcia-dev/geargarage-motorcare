@@ -3,97 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpinestars C-1</title>
-    <style>
-        
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-            font-family: sans-serif;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        p {
-            width: 80%;
-            margin: 20px auto;
-            line-height: 1.6;
-        }
-        
-        img {
-            max-width: 450px; 
-            width: 100%;      
-            height: auto;     
-            margin: 20px 0;  
-        }
-    </style>
+    <title>Alpinestars C-1 - Gear Garage MotorCare</title>
+    <link rel="stylesheet" href="../Products_styles/Helmet.css">
 </head>
 <body>
-    <center>
+    <header>
         <h1>Gear Garage MotorCare</h1>
-        <nav>
-            <ul style="list-style:none; padding:0;">
-                <li style="display:inline; margin:0 15px;"><a href="../index.html">Home</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="../about.html">About</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <h2>Alpinestars C-1 Air Pants</h2>
+        <p>Build your dream ride. Quality gear and custom parts to stand out on the road.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="about-grid" style="margin-bottom: 3rem;">
+            <div class="about-image">
+                <img src="../Images/pants.jpg" alt="Alpinestars Riding Pants">
+            </div>
+            <div class="about-text">
+                <h2>Alpinestars C-1</h2>
+                <p style="font-size: 1.5rem; font-weight: bold; color: var(--brand); margin-top: -10px;">₱5,600</p>
+                <p>High-performance motorcycle riding pants divided into adventure/touring, urban/street, and racing/sport lines.</p>
+                <p>They feature technical textiles or premium cowhide, CE-certified armor integrations, and reinforced stitching for track-level safety.</p>
+            </div>
+        </div>
 
-        <img src="../Images/pants.jpg" 
-             alt="Alpinestars C-1 Air Pants">
+        <div class="contact-grid">
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Product Specifications</h3>
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Materials</strong></td><td>Premium bovine leather / Technical stretch panels</td></tr>
+                        <tr><td><strong>Protection</strong></td><td>Internal CE-certified Nucleon Flex Plus knee armor</td></tr>
+                        <tr><td><strong>Fit</strong></td><td>Pre-curved legs for improved riding comfort</td></tr>
+                        <tr><td><strong>Sliders</strong></td><td>Replaceable sport knee sliders included</td></tr>
+                        <tr><td><strong>Ventilation</strong></td><td>Localized perforation for enhanced airflow</td></tr>
+                        <tr><td><strong>Attachment</strong></td><td>Waist connection zipper allows attachment to jackets</td></tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <p>
-            These pants are purpose-built for hot weather and urban riding, prioritizing maximum airflow without sacrificing essential safety standards.
-        </p>
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Order Enquiry</h3>
+                <form action="#" method="POST">
+                    <fieldset style="margin-bottom: 0;">
+                        <div>
+                            <label for="quantity">Quantity:</label><br>
+                            <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Delivery Method</label>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_standard" name="delivery_method" value="standard" required>
+                                <label for="delivery_standard">Standard Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_express" name="delivery_method" value="express">
+                                <label for="delivery_express">Express Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_pickup" name="delivery_method" value="pickup">
+                                <label for="delivery_pickup">In-Store Pickup</label>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Optional Extras</label>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_gift" name="optional_extras" value="gift_wrapping">
+                                <label for="extra_gift">Gift Wrapping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_handling" name="optional_extras" value="express_handling">
+                                <label for="extra_handling">Priority Handling</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact_email">Contact Email:</label><br>
+                            <input type="email" id="contact_email" name="contact_email" required>
+                        </div>
+                        <button type="submit">Submit Enquiry</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
 
-        <h3>Product Specifications</h3>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Specifications</th>
-                    <th>Details & Features</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Primary Material:</strong> 450D polyfabric & high-resistance technical mesh</td>
-                    <td><strong>Airflow:</strong> Large mesh panels on the front and back provide constant ventilation for spring/summer riding.</td>
-                </tr>
-                <tr>
-                    <td><strong>Certification:</strong> CE Class A standard for motorcycle apparel</td>
-                    <td><strong>Mobility:</strong> Ergonomic knee area designed for freedom of movement and riding comfort.</td>
-                </tr>
-                <tr>
-                    <td><strong>Knee Armor:</strong> Includes Nucleon Flex Plus Level 1 Protectors</td>
-                    <td><strong>Adjustability:</strong> Features a 3-position adjustable knee armor compartment with color-coded stitching to tailor the fit.</td>
-                </tr>
-                <tr>
-                    <td><strong>Hip Armor:</strong> Pockets ready for Bioflex Hip Protectors (armor sold separately)</td>
-                    <td><strong>Comfort:</strong> The entire crotch panel is built without an inseam to prevent chafing during rides.</td>
-                </tr>
-                <tr>
-                    <td><strong>Inner Lining:</strong> 3D inner mesh</td>
-                    <td><strong>Hygiene:</strong> The mesh lining has antimicrobial and antibacterial properties to manage moisture and reduce odors.</td>
-                </tr>
-                <tr>
-                    <td><strong>Storage:</strong> 2 front zippered garage pockets, 2 rear pockets</td>
-                    <td><strong>Practicality:</strong> Standard belt loops and overlapping rear pocket closures keep your everyday carry items secure.</td>
-                </tr>
-                <tr>
-                    <td><strong>Visibility:</strong> 3D reflective heat transfer logo and elements</td>
-                    <td><strong>Durability:</strong> The lower leg area is reinforced to withstand constant friction from motorcycle boots or technical footwear.</td>
-                </tr>
-            </tbody>
-        </table>
-    </center>
+    <footer>
+        <p>&copy; 2026 Gear Garage MotorCare. Ride Safe.</p>
+    </footer>
 </body>
 </html>

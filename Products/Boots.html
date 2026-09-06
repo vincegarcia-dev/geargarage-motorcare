@@ -3,85 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIMA Strato</title>
+    <title>SHIMA Strato - Gear Garage MotorCare</title>
+    <link rel="stylesheet" href="../Products_styles/Helmet.css">
 </head>
 <body>
-    <center>
+    <header>
         <h1>Gear Garage MotorCare</h1>
-        <nav>
-            <ul style="list-style:none; padding:0;">
-                <li style="display:inline; margin:0 15px;"><a href="../index.html">Home</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="../about.html">About</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </center>
+        <p>Build your dream ride. Quality gear and custom parts to stand out on the road.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="about-grid" style="margin-bottom: 3rem;">
+            <div class="about-image">
+                <img src="../Images/boots.jpg" alt="Shima Riding Boots">
+            </div>
+            <div class="about-text">
+                <h2>SHIMA Strato</h2>
+                <p style="font-size: 1.5rem; font-weight: bold; color: var(--brand); margin-top: -10px;">₱3,000</p>
+                <p>Specialized protective footwear engineered with reinforced armor, anti-slip soles, and abrasion-resistant materials.</p>
+                <p>Heavy-duty full-grain oil-treated leather, suede, or reinforced synthetic textiles keep you safe in all weather conditions.</p>
+            </div>
+        </div>
 
-    <section>
-        <h2 style="text-align: center;">SHIMA Strato</h2>
+        <div class="contact-grid">
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Product Specifications</h3>
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Materials</strong></td><td>Microfiber / High-ventilation mesh panels</td></tr>
+                        <tr><td><strong>Fastening</strong></td><td>ATOP reel knob lacing system for quick adjustment</td></tr>
+                        <tr><td><strong>Protection</strong></td><td>SAP TPU ankle cover and reinforced heel/toe areas</td></tr>
+                        <tr><td><strong>Sole</strong></td><td>Cross-braced ergonomic anti-slip rubber sole</td></tr>
+                        <tr><td><strong>Visibility</strong></td><td>Night Vision System reflective panels</td></tr>
+                        <tr><td><strong>Shifter Pad</strong></td><td>Rubberized gear pad for smooth shifting</td></tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <img src="../Images/boots.jpg" 
-             alt="SHIMA Strato Boots"
-             style="display: block; margin: 0 auto;">
+            <section class="contact-card">
+                <h3 style="margin-top: 0;">Order Enquiry</h3>
+                <form action="#" method="POST">
+                    <fieldset style="margin-bottom: 0;">
+                        <div>
+                            <label for="quantity">Quantity:</label><br>
+                            <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Delivery Method</label>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_standard" name="delivery_method" value="standard" required>
+                                <label for="delivery_standard">Standard Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_express" name="delivery_method" value="express">
+                                <label for="delivery_express">Express Shipping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="radio" id="delivery_pickup" name="delivery_method" value="pickup">
+                                <label for="delivery_pickup">In-Store Pickup</label>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="font-weight: bold; color: var(--brand); display: block; margin-bottom: 5px;">Optional Extras</label>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_gift" name="optional_extras" value="gift_wrapping">
+                                <label for="extra_gift">Gift Wrapping</label>
+                            </div>
+                            <div class="inline-field">
+                                <input type="checkbox" id="extra_handling" name="optional_extras" value="express_handling">
+                                <label for="extra_handling">Priority Handling</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact_email">Contact Email:</label><br>
+                            <input type="email" id="contact_email" name="contact_email" required>
+                        </div>
+                        <button type="submit">Submit Enquiry</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
 
-        <p style="max-width: 800px; margin: 20px auto; text-align: center;">
-            The SHIMA Strato is a lightweight, mid-height men's motorcycle boot built for adventure, touring, and urban commuting. <br>
-            It features an innovative ATOP lacing system for easy adjustments, comprehensive SAP™ ankle protection, <br>
-            and comes in both a highly ventilated standard version and a waterproof WP model.
-        </p>
-
-        <h3 style="text-align: center;">Product Specifications</h3>
-
-        <table border="1" style="border-collapse: collapse; width: 100%; max-width: 800px; margin: 20px auto;">
-            <colgroup>
-                <col style="width: 30%;">
-                <col style="width: 70%;">
-            </colgroup>
-            <thead>
-                <tr style="background-color: #f2f2f2; text-align: left;">
-                    <th style="padding: 10px;">Specification / Feature</th>
-                    <th style="padding: 10px;">Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Riding Style</td>
-                    <td style="padding: 10px;">Adventure, touring, and urban commuting; lightweight, mid-height design</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Primary Materials</td>
-                    <td style="padding: 10px;">Microfiber and breathable mesh</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Closure System</td>
-                    <td style="padding: 10px;">ATOP Reel Knob lacing system for one-handed tightening, plus a rear pulling strap</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Weather Resistance</td>
-                    <td style="padding: 10px;">Standard model is highly ventilated for summer/mid-season; <strong>Strato WP</strong> features a Teflon-coated NextDry™ waterproof, breathable membrane</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Ankle Protection</td>
-                    <td style="padding: 10px;">SAP™ (SHIMA Advanced Protection) TPU cover plate and Armor Plus impact-absorbing foam</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Heel &amp; Toe Safety</td>
-                    <td style="padding: 10px;">Reinforced heel cup, hardened toe cap, and reinforced double safe seams against tearing</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Sole Construction</td>
-                    <td style="padding: 10px;">Ergonomic, cross-reinforced, oil-resistant, and non-slip rubber sole with embedded steel shank</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Gear Control</td>
-                    <td style="padding: 10px;">Rubberized front gear shift pad for increased lever grip and abrasion protection</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; font-weight: bold;">Visibility</td>
-                    <td style="padding: 10px;">Night Vision System utilizing large reflective glass microsphere panels for nighttime riding</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <footer>
+        <p>&copy; 2026 Gear Garage MotorCare. Ride Safe.</p>
+    </footer>
 </body>
 </html>
