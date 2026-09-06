@@ -4,43 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Gear Garage MotorCare</title>
-    <link rel="stylesheet" href="Style/about.css">
+    <link rel="stylesheet" href="Homepage_styles/about.css">
 </head>
 <body>
-    <center>
     <header>
         <h1>Gear Garage MotorCare</h1>
-        <nav>
-            <ul style="list-style:none; padding:0;">
-                <li style="display:inline; margin:0 15px;"><a href="index.html">Home</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="about.html">About</a></li>
-                <li style="display:inline; margin:0 15px;"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <p>Build your dream ride. Quality gear and custom parts to stand out on the road.</p>
     </header>
-    </center>
     
-    <center>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
     <main>
         <section class="about-section">
-            <h2>About the Owner</h2>
+            <h2 style="text-align: center;">About the Owner & Shop</h2>
 
-            <!-- PROFILE SECTION -->
-            <section>
-                <p>Hi I'm Vincent Ivan Burla, an ordinary kid with an extraordinary passion for motorcycles.</p>
-                <p> I believe that every vehicle deserves hands-on precision and genuine care in a welcoming garage environment.</p>
-                <img src="Images/gearup.jpg" alt="Vincent Ivan Burla" width="300">
-            </section>
+            <article class="product-card" style="text-align: left; max-width: 1000px; margin: 0 auto; display: block;">
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Hi, I'm Vincent Ivan Burla</h3>
+                        <p>An ordinary kid with an extraordinary passion for motorcycles.</p>
+                        <p>I believe that every vehicle deserves hands-on precision and genuine care in a welcoming garage environment.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="Images/gearup.jpg" alt="Vincent Ivan Burla in Gear">
+                    </div>
+                </div>
+                
+                <hr style="width: 100%; border: 1px solid var(--light-bg); margin: 3rem 0;">
 
-            <p>
-                Welcome to Gear Garage MotorCare, born from my personal passion for motorcycles and a commitment to keeping riders properly equipped.<br>
-                Our ultimate destination for high-quality motorcycle gears, essential daily riding accessories, and expert maintenance services.<br>
-                We make sure every product we sell and every service we offer meets the highest standards of reliability and performance.<br>
-            </p>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="Images/red.jpg" alt="My First Motorcycle"> 
+                    </div>
+                    <div class="about-text">
+                        <h3>Gear Garage MotorCare</h3>
+                        <p>Born from my personal passion for motorcycles and a commitment to keeping riders properly equipped.</p>
+                        <p>We are your ultimate destination for high-quality motorcycle gears, essential daily riding accessories, and expert maintenance services.</p>
+                        <p>We make sure every product we sell and every service we offer meets the highest standards of reliability and performance.</p>
+                    </div>
+                </div>
 
-            <img src="Images/red.jpg" alt="My First Motorcycle" width="250"> 
+            </article>
         </section>
     </main>
-    </center/>
+
+    <footer>
+        <p>&copy; 2026 Gear Garage MotorCare. Ride Safe.</p>
+    </footer>
 </body>
 </html>

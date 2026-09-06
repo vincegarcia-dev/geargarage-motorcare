@@ -2,75 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Gear Garage MotorCare</title>
-    <link rel="stylesheet" href="Style/contact.css">
+    <link rel="stylesheet" href="Homepage_styles/contact.css">
 </head>
 <body>
-<center>
-    <h1>Gear Garage MotorCare</h1>
+    <header>
+        <h1>Gear Garage MotorCare</h1>
+        <p>Build your dream ride. Quality gear and custom parts to stand out on the road.</p>
+    </header>
 
     <nav>
-        <ul style="list-style:none; padding:0;">
-            <li style="display:inline; margin:0 15px;"><a href="index.html">Home</a></li>
-            <li style="display:inline; margin:0 15px;"><a href="about.html">About</a></li>
-            <li style="display:inline; margin:0 15px;"><a href="contact.html">Contact</a></li>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-</center>
-    <section>
-        <h2>Contact Us</h2>
 
-        <p>You can reach us through:</p>
-
-        <ul>
-            <li>Email: geargaragemotorcare@gmail.com</li>
-            <li>Phone: +63 909 021 1087</li>
-            <li>Facebook: Gear Garage MotorCare</li>
-            <li>Instagram: Gear Garage MotorCarePH</li>
-            <li>Viber: Gear Garage MotorCare No.1</li>
-        </ul>
-
-        <!-- Contact Form Section -->
-        <h2>Send Us a Message</h2>
-        <form action="#" method="POST">
+    <main>
+        <div class="contact-grid">
             
-            <fieldset style="max-width: 400px;">
-                <legend>Your details</legend>
-                
-                <!-- Name -->
-                <div style="margin-bottom: 10px;">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <section class="contact-card">
+                <h2>Contact Us</h2>
+                <p>You can reach us through:</p>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> geargaragemotorcare@gmail.com</li>
+                    <li><strong>Phone:</strong> +63 909 021 1087</li>
+                    <li><strong>Facebook:</strong> Gear Garage MotorCare</li>
+                    <li><strong>Instagram:</strong> Gear Garage MotorCarePH</li>
+                    <li><strong>Viber:</strong> Gear Garage MotorCare No.1</li>
+                </ul>
+            </section>
 
-                <!-- Email -->
-                <div style="margin-bottom: 10px;">
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </div>
+            <section class="contact-card">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="POST">
+                    <fieldset style="margin-bottom: 0;">
+                        <legend>Your Details</legend>
+                        
+                        <div>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
 
-                <!-- Subject Dropdown -->
-                <div style="margin-bottom: 10px;">
-                    <label for="subject">Subject:</label><br>
-                    <select id="subject" name="subject">
-                        <option value="service-booking">Service Booking</option>
-                        <option value="parts-inquiry">Parts Inquiry</option>
-                        <option value="order-status">Order Status</option>
-                        <option value="other">Something Else</option>
-                    </select>
-                </div>
+                        <div>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
 
-                <!-- Client Message Text Area -->
-                <div style="margin-bottom: 10px;">
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
-                </div>
-            </fieldset>
+                        <div>
+                            <label for="subject">Subject:</label><br>
+                            <select id="subject" name="subject">
+                                <option value="service-booking">Service Booking</option>
+                                <option value="parts-inquiry">Parts Inquiry</option>
+                                <option value="order-status">Order Status</option>
+                                <option value="other">Something Else</option>
+                            </select>
+                        </div>
 
-            <div style="margin-top: 15px;">
-                <button type="submit">Send message</button>
-            </div>
-        </form>
-    </section>
+                        <div>
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Send message</button>
+                    </fieldset>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gear Garage MotorCare. Ride Safe.</p>
+    </footer>
 </body>
 </html>
