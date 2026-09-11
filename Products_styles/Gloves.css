@@ -2,11 +2,11 @@
    1. VARIABLES
    ========================================= */
 :root {
-    --brand: #d84315;
-    --dark-ink: #1c1c1c;
-    --muted-grey: #555555;
-    --light-bg: #f4f4f4;
-    --card-bg: #ffffff;
+    --brand: #d84315;        /* Burnout Orange */
+    --dark-ink: #1c1c1c;     /* Asphalt Black */
+    --muted-grey: #555555;   /* Engine Grey */
+    --light-bg: #f4f4f4;     /* Light off-white background */
+    --card-bg: #ffffff;      /* Pure white for high contrast */
 }
 
 /* =========================================
@@ -26,26 +26,29 @@ body {
 }
 
 /* =========================================
-   3. LAYOUT REGIONS
+   3. LAYOUT REGIONS & FLEX HEADER
    ========================================= */
-header {
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--dark-ink);
     color: var(--light-bg);
-    text-align: center;
-    padding: 3rem 1rem;
+    padding: 1.5rem 2rem;
     border-bottom: 6px solid var(--brand);
 }
 
-header h1 {
+.site-header .brand-group h1 {
     margin: 0;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-nav {
-    background-color: #000000;
-    text-align: center;
-    padding: 1rem 0;
+.site-header .brand-group p {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    color: #cccccc;
 }
 
 main {
@@ -64,22 +67,20 @@ footer {
 }
 
 /* =========================================
-   4. NAVIGATION
+   4. NAVIGATION (FLEXBOX)
    ========================================= */
-nav ul {
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav li {
-    display: inline-block;
-}
-
 nav a {
     color: var(--light-bg);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 12px;
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -163,7 +164,7 @@ select:focus {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.about-text h3 {
+.about-text h2 {
     color: var(--brand);
     margin-top: 0;
     text-transform: uppercase;
@@ -182,6 +183,12 @@ select:focus {
     border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
 .contact-card h2, .contact-card h3 {
