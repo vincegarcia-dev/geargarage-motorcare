@@ -85,7 +85,7 @@ nav a:hover {
 }
 
 /* =========================================
-   5. CENTRED BANNER (Lesson 6.4 requirement)
+   5. CENTRED BANNER 
    ========================================= */
 .hero-banner {
     display: flex;
@@ -103,8 +103,8 @@ nav a:hover {
     font-weight: 500;
 }
 
-.hero-banner p {
-    margin: 0;
+.section-banner {
+    text-align: center;
 }
 
 /* =========================================

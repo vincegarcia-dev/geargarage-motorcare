@@ -26,7 +26,7 @@ body {
 }
 
 /* =========================================
-   3. LAYOUT REGIONS & NAVIGATION (FLEXBOX)
+   3. LAYOUT REGIONS (FLEXBOX HEADER)
    ========================================= */
 .site-header {
     display: flex;
@@ -45,6 +45,24 @@ body {
     letter-spacing: 2px;
 }
 
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+footer {
+    background-color: var(--dark-ink);
+    color: var(--muted-grey);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 3px solid var(--muted-grey);
+}
+
+/* =========================================
+   4. NAVIGATION (FLEXBOX)
+   ========================================= */
 .site-header nav ul {
     display: flex;
     gap: 20px;
@@ -66,25 +84,10 @@ nav a:hover {
     color: var(--brand);
 }
 
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
-}
-
-footer {
-    background-color: var(--dark-ink);
-    color: var(--muted-grey);
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-    border-top: 3px solid var(--muted-grey);
-}
-
 /* =========================================
-   4. CENTRED ELEMENT (Lesson 6.4)
+   5. CENTRED BANNER (Lesson 6.4 requirement)
    ========================================= */
-.contact-hero {
+.hero-banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,56 +98,83 @@ footer {
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-left: 8px solid var(--brand);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.contact-hero p {
-    margin: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     font-size: 1.15rem;
     font-weight: 500;
 }
 
-/* =========================================
-   5. CONTACT PAGE GRID & CARDS
-   ========================================= */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    margin-top: 1rem;
+.hero-banner p {
+    margin: 0;
 }
 
-.contact-card {
+/* =========================================
+   6. COMPONENTS (Cards & Grid)
+   ========================================= */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
     background-color: var(--card-bg);
     border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    border-left: 8px solid var(--brand);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-card:hover {
+.product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
-.contact-card h2 {
+.product-card h3 {
+    font-size: 1.5rem;
+    color: var(--brand);
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.product-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
     color: var(--dark-ink);
+    margin: 0.5rem 0;
 }
 
-.contact-list {
-    list-style: none;
-    padding: 0;
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 1rem 0;
 }
 
-.contact-list li {
-    margin-bottom: 1.2rem;
+.product-card .btn {
+    background-color: var(--dark-ink);
+    color: var(--light-bg);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.product-card .btn:hover {
+    background-color: var(--brand);
 }
 
 /* =========================================
-   6. FORM STYLING
+   7. CONTACT FORM
    ========================================= */
 fieldset {
     padding: 2rem;
@@ -161,9 +191,7 @@ legend {
     padding: 0 10px;
 }
 
-input:not([type="radio"]):not([type="checkbox"]), 
-textarea, 
-select {
+input, textarea, select {
     padding: 12px;
     width: 100%;
     margin-bottom: 1.5rem;
@@ -173,16 +201,9 @@ select {
     font-size: 1rem;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-    outline: 3px solid var(--brand);
-    outline-offset: 2px;
-}
-
 button[type="submit"] {
     background-color: var(--brand);
-    color: var(--card-bg);
+    color: var(--light-bg);
     padding: 14px 28px;
     border: none;
     cursor: pointer;
@@ -191,19 +212,77 @@ button[type="submit"] {
     border-radius: 4px;
     text-transform: uppercase;
     width: 100%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button[type="submit"]:hover {
     background-color: #a8320c;
-    transform: scale(1.02);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
 }
 
 /* =========================================
-   7. RESPONSIVE DESIGN (MOBILE)
+   8. ABOUT PAGE LAYOUT
    ========================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.about-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text h3 {
+    color: var(--brand);
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   9. CONTACT PAGE LAYOUT
+   ========================================= */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.contact-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-card h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 1.2rem;
+}
+
 @media (max-width: 768px) {
-    .contact-grid {
+    .about-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
 }
