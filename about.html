@@ -6,12 +6,13 @@
     <title>About - Gear Garage MotorCare</title>
     <link rel="stylesheet" href="Homepage_styles/about.css">
 </head>
-<body>
+<body class="page">
     <header class="site-header">
-        <div class="brand-group">
+        <div>
             <h1>Gear Garage MotorCare</h1>
             <p>Build your dream ride. Quality gear and custom parts to stand out on the road.</p>
         </div>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,16 +21,40 @@
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Sidebar Area Required by the Skeleton -->
+        <aside class="site-sidebar">
+            <div class="sidebar-widget">
+                <h3>Categories</h3>
+                <ul class="sidebar-list">
+                    <li><a href="#helmets">Quality Helmets</a></li>
+                    <li><a href="#jackets">Riding Jackets</a></li>
+                    <li><a href="#gloves">Gloves & Armor</a></li>
+                    <li><a href="#pants">Riding Pants</a></li>
+                    <li><a href="#boots">Riding Boots</a></li>
+                    <li><a href="#bags">Bags & Storage</a></li> 
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>Shop Hours</h3>
+                <p>Mon:9:00 AM - 5:30 PM</p>
+                <p>Tue:9:00 AM - 5:30 PM</p>
+                <p>Wed:9:00 AM - 5:30 PM</p>
+                <p>Thu:9:00 AM - 5:30 PM</p>
+                <p>Fri:9:00 AM - 5:30 PM</p>
+                <p>Saturday: Closed</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </aside>
+
     <main>
-        <section class="about-hero">
-        </section>
-
         <section class="about-section">
-            <h2 style="text-align: center;">About the Owner & Shop</h2>
+            <div class="section-banner">
+                <h2>About the Owner & Shop</h2>
+            </div>
 
-            <article class="product-card" style="text-align: left; max-width: 1000px; margin: 0 auto; display: block;">
-                
+            <article class="about-card">
                 <div class="about-grid">
                     <div class="about-text">
                         <h3>Hi, I'm Vincent Ivan Burla</h3>
@@ -41,9 +66,9 @@
                     </div>
                 </div>
                 
-                <hr style="width: 100%; border: 1px solid var(--light-bg); margin: 3rem 0;">
+                <hr class="about-divider">
 
-                <div class="about-grid">
+                <div class="about-grid reverse-mobile">
                     <div class="about-image">
                         <img src="Images/red.jpg" alt="My First Motorcycle"> 
                     </div>
@@ -54,7 +79,6 @@
                         <p>We make sure every product we sell and every service we offer meets the highest standards of reliability and performance.</p>
                     </div>
                 </div>
-
             </article>
         </section>
     </main>
